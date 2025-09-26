@@ -4,7 +4,8 @@ instagram:
   webhook:
     verify-token: ${INSTAGRAM_VERIFY_TOKEN} # .env faylidan olinadi
   api:
-    access-token: ${INSTAGRAM_ACCESS_TOKEN} # .env faylidan olinadi
+    messenger:
+      access-token: ${INSTAGRAM_MESSENGER_ACCESS_TOKEN} # .env faylidan olinadi
   business:
     username: "muhammadjonsaidov76"
 

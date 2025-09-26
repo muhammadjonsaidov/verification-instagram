@@ -16,11 +16,11 @@ public class InstagramApiService {
 
     private final RestTemplate restTemplate = new RestTemplate();
 
-    @Value("${instagram.api.access-token}")
-    private String ACCESS_TOKEN;
+    @Value("${instagram.api.messenger.access-token}")
+    private String MESSENGER_ACCESS_TOKEN;
 
     public void sendReplyMessage(String recipientPsid, String messageText) {
-        String url = GRAPH_API_URL + "?access_token=" + ACCESS_TOKEN;
+        String url = GRAPH_API_URL + "?access_token=" + MESSENGER_ACCESS_TOKEN;
 
         String requestBody = String.format("""
                 {
